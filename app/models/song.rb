@@ -23,7 +23,7 @@ class Song < ActiveRecord::Base
     song_notes.delete_if(&:empty?)
     song_notes.each do |content|
       self.notes << Note.new(content: content)
-      
+      #test 
     end
   end
 
